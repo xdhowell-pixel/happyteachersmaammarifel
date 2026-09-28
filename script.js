@@ -34,7 +34,7 @@ yesBtn.style.transition = "transform 0.3s ease";
 noBtn.addEventListener("click", () => {
 yesScale += 2;
 
-if (yesBtn.style.position !== fixed) { 
+if (yesBtn.style.position !== "fixed") { 
     yesBtn.style.position = "fixed";
     yesBtn.style.top = "50%";
     yesBtn.style.left = "50%";
@@ -48,7 +48,7 @@ if (yesBtn.style.position !== fixed) {
 // YES is clicked
 
 yesBtn.addEventListener("click", () => {
-    title.textContent = "Yippeeeee!";
+    title.textContent = "Thank you, Ma'am Mari!";
     catImg.src = "cat_dance.gif";
     
     document.querySelector(".letter-window").classList.add("final");
